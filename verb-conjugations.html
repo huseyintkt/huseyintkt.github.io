@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Language</title>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css" rel="stylesheet" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR START-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info text-white px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gramer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reading</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Listening</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./verb-conjugations.html">Verb Conjugations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./learn-words.html">Learn Words</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END-->
+
+    <!-- MAIN START -->
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-md-9">
+                <div class="overflow-auto">
+                    <!-- Butona her tiklandiginda h2 icerisine random bir fiil render edilecek -->
+                    <h2 id="verb" class="text-center float-start"></h2>
+                    <button id="btn-new-verb" class="btn btn-primary float-end">New Verb</button>
+                    <hr class="mt-5">
+                </div>
+                <div class="row">
+                    <!-- PRESENTE START-->
+                    <div class="col-md-6 mb-5">
+                        <p><strong>Presente</strong></p>
+                        <div class="form-outline mb-4">
+                            <input id="presente-io" type="text" class="form-control" />
+                            <label class="form-label">Io</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="presente-tu" type="text" class="form-control" />
+                            <label class="form-label">Tu</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="presente-lui-lei" type="text" class="form-control" />
+                            <label class="form-label">Lui/Lei </label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="presente-noi" type="text" class="form-control" />
+                            <label class="form-label">Noi</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="presente-voi" type="text" class="form-control" />
+                            <label class="form-label">Voi</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="presente-loro" type="text" class="form-control" />
+                            <label class="form-label">Loro</label>
+                        </div>
+                        <button id="show-presente" class="btn btn-primary">Show</button>
+                        <button id="clear-presente" class="btn btn-info float-end">Clear</button>
+                    </div>
+                    <!-- PRESENTE END-->
+                    <!-- PASSATO PROSSIMA START-->
+                    <div class="col-md-6 mb-5">
+                        <p><strong>Passato Prossimo</strong></p>
+                        <div class="form-outline mb-4">
+                            <input id="passato-prossimo-io" type="text" class="form-control" />
+                            <label class="form-label">Io</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="passato-prossimo-tu" type="text" class="form-control" />
+                            <label class="form-label">Tu</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="passato-prossimo-lui-lei" type="text" class="form-control" />
+                            <label class="form-label">Lui/Lei </label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="passato-prossimo-noi" type="text" class="form-control" />
+                            <label class="form-label">Noi</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="passato-prossimo-voi" type="text" class="form-control" />
+                            <label class="form-label">Voi</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="passato-prossimo-loro" type="text" class="form-control" />
+                            <label class="form-label">Loro</label>
+                        </div>
+                        <button id="show-passato-prossimo" class="btn btn-primary">Show</button>
+                        <button id="clear-passato-prossimo" class="btn btn-info float-end">Clear</button>
+                    </div>
+                    <!-- PASSATO PROSSIMA END-->
+                    <!-- FUTURO START-->
+                    <div class="col-md-6 mb-5">
+                        <p><strong>Futuro</strong></p>
+                        <div class="form-outline mb-4">
+                            <input id="futuro-semplice-io" type="text" class="form-control" />
+                            <label class="form-label">Io</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="futuro-semplice-tu" type="text" class="form-control" />
+                            <label class="form-label">Tu</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="futuro-semplice-lui-lei" type="text" class="form-control" />
+                            <label class="form-label">Lui/Lei </label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="futuro-semplice-noi" type="text" class="form-control" />
+                            <label class="form-label">Noi</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="futuro-semplice-voi" type="text" class="form-control" />
+                            <label class="form-label">Voi</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input id="futuro-semplice-loro" type="text" class="form-control" />
+                            <label class="form-label">Loro</label>
+                        </div>
+                        <button id="show-futuro-semplice" class="btn btn-primary">Show</button>
+                        <button id="clear-futuro-semplice" class="btn btn-info float-end">Clear</button>
+                    </div>
+                    <!-- FUTURO END-->
+                </div>
+            </div>
+            <!-- ALL VERBS START-->
+            <div class="col-md-3">
+                <h2 class="text-center">ALL VERBS</h2>
+                <hr>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <!-- TODO : Burada fiiller seviyelerine ayrilabilir -->
+                                <!-- Livello A1 Verbi -->
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-mdb-parent="#accordionExample">
+                            <!-- Tum fiiller buraya render edilecek -->
+                            <div id="accordion-body" class="accordion-body row"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ALL VERBS END-->
+        </div>
+    </div>
+    <!-- MAIN END -->
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js"></script>
+    <!-- Uuidv4 JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+    <!-- Database JS-->
+    <script src="./js/db.js"></script>
+    <!-- Helper JS -->
+    <script src="./js/helper.js"></script>
+    <!-- Verb Conjugations JS -->
+    <script src="./js/verb-conjugations.js"></script>
+    <!-- Learn Words -->
+    <script src="./js/learn-words.js"></script>
+</body>
+
+</html>
